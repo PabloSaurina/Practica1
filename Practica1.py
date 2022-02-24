@@ -44,8 +44,7 @@ def merger_task(semaforos_e,semaforos_n,buffer,merged_numeros):
         (a,pos) = minimo_merge(buffer)
         if a != -1:
             merged_numeros.append(a)
-            buffer[pos] = -2
-            print(pos,':',a)
+            print("from prod",pos,':',a)
         else:
             z = False
         for j in range(N):
